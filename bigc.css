@@ -72,9 +72,12 @@ table {
 	color: white;
 }
 
+#home h1 {
+    text-shadow: 5px 5px 10px #000;
+}
+
 /* Pages that aren't the homepage */
 #nothome {
-    /*background-image: url("ep_naturalwhite.png");*/
     background-color: #e0e0e0;
 	color: black;
 }
@@ -95,22 +98,6 @@ table {
     display: none;
 }
 
-/*
-
-.landscape {
-    max-width:75%;
-}
-
-.portrait {
-    max-height:75%;
-}
-
-img {
-    max-width:49%;
-}
-
-*/
-
 /* Pinterest style photo stuff */
 
 #columns {
@@ -120,8 +107,8 @@ img {
 
 div#columns figure {
     transition: opacity .4s ease-in-out;
-  display: inline-block;
-  margin:0;
+    display: inline-block;
+    margin:0;
 }
 
 div#columns figure img {
