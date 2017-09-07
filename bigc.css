@@ -1,0 +1,190 @@
+body {
+	font-family: 'Crimson Text', serif;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: auto;
+    display: table;
+}
+
+.inner-wrapper {
+    display: table-row;
+}
+
+.left {
+    width: 250px;
+    background-color:  rgba(217, 217, 217, .3);
+    display: table-cell;
+}
+
+.right{
+    border: 2em solid transparent;
+    display: table-cell;
+}
+
+.bold {
+    font-weight:700;
+}
+
+.party {
+    float:left;
+    width: 100px;
+    padding-right:1em;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin:0em;
+}
+
+h4 {
+    font-weight:700;
+    margin-bottom:-1.5em;
+}
+
+table {
+    width: 200px;
+    padding:0em 1em;
+}
+
+/* Homepage only */
+#home {
+	background: url(dancing.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    color: white;
+}
+
+#home .right {
+	width: 3000px;
+	text-align: center;
+}
+
+#home a {
+	color: white;
+}
+
+/* Pages that aren't the homepage */
+#nothome {
+    /*background-image: url("ep_naturalwhite.png");*/
+    background-color: #e0e0e0;
+	color: black;
+}
+
+#nothome .right{
+    max-width: 800px;
+}
+
+#nothome a {
+	color: black;
+}
+
+#nothome a:hover {
+    color: #3a3a3a;
+}
+
+#return {
+    display: none;
+}
+
+/*
+
+.landscape {
+    max-width:75%;
+}
+
+.portrait {
+    max-height:75%;
+}
+
+img {
+    max-width:49%;
+}
+
+*/
+
+/* Pinterest style photo stuff */
+
+#columns {
+    column-width: 320px;
+    width: 100%;
+}
+
+div#columns figure {
+    transition: opacity .4s ease-in-out;
+  display: inline-block;
+  margin:0;
+}
+
+div#columns figure img {
+    width: 100%; 
+    height: auto;
+    display: inline-block;
+}
+
+div#columns:hover figure:not(:hover) {
+    opacity: 0.4;
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 760px) {
+
+    /* Home only */ 
+
+    .inner-wrapper {
+        display:block;
+    }
+
+    #home {
+        height: 100%;
+    }
+
+    #home .left {
+        display: block;
+        width:100%;
+    }
+
+    .space {
+        display: none;
+    }
+
+    /* Not Home */
+
+    #nothome .left {
+        display:none; 
+    }
+
+    #return {
+        display: block;
+    }
+
+    #columns { 
+        column-gap: 0px;
+    }
+
+    #columns figure {
+        width: 100%;
+    }
+
+    .party {
+        width:50%;
+        float:none;
+        padding: .5em 1em 1em 0em;
+    }
+
+    .afterparty {
+        clear:both;
+    }
+
+
+}
+
