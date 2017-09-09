@@ -103,29 +103,6 @@ table {
     display: none;
 }
 
-/* Pinterest style photo stuff */
-
-#columns {
-    column-width: 320px;
-    width: 100%;
-}
-
-div#columns figure {
-    transition: opacity .4s ease-in-out;
-    display: inline-block;
-    margin:0;
-}
-
-div#columns figure img {
-    width: 98%; 
-    height: auto;
-    display: inline-block;
-}
-
-div#columns:hover figure:not(:hover) {
-    opacity: 0.4;
-}
-
 /* Our Story image hack */
 
 .standalone img {
@@ -181,6 +158,18 @@ div#columns:hover figure:not(:hover) {
 
     .afterparty {
         clear:both;
+    }
+
+    /* lightbox attempt */
+
+    .featherlight .featherlight-content {
+        /* dimensions: maximize lightbox with for small screens */
+        margin-left: 0;
+        margin-right: 0;
+        max-height: 98%;
+
+        padding: 10px 10px 0;
+        border-bottom: 10px solid transparent;
     }
 
 
