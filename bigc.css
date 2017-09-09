@@ -1,5 +1,5 @@
 body {
-	font-family: 'Crimson Text', serif;
+    font-family: 'Crimson Text', serif;
 }
 
 .wrapper {
@@ -25,6 +25,11 @@ body {
 
 .bold {
     font-weight:700;
+}
+
+.preparty {
+    clear:both;
+    padding-bottom: 2em;
 }
 
 .party {
@@ -54,7 +59,7 @@ table {
 
 /* Homepage only */
 #home {
-	background: url(images/dancing.jpg) no-repeat center center fixed; 
+    background: url(images/dancing.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,12 +69,12 @@ table {
 }
 
 #home .right {
-	width: 3000px;
-	text-align: center;
+    width: 3000px;
+    text-align: center;
 }
 
 #home a {
-	color: white;
+    color: white;
 }
 
 #home h1 {
@@ -79,7 +84,7 @@ table {
 /* Pages that aren't the homepage */
 #nothome {
     background-color: #e0e0e0;
-	color: black;
+    color: black;
 }
 
 #nothome .right{
@@ -87,7 +92,7 @@ table {
 }
 
 #nothome a {
-	color: black;
+    color: black;
 }
 
 #nothome a:hover {
