@@ -117,7 +117,7 @@ div#columns figure {
 }
 
 div#columns figure img {
-    width: 100%; 
+    width: 98%; 
     height: auto;
     display: inline-block;
 }
@@ -126,38 +126,10 @@ div#columns:hover figure:not(:hover) {
     opacity: 0.4;
 }
 
-/** LIGHTBOX MARKUP **/
+/* Our Story image hack */
 
-.lightbox {
-    /** Default lightbox to hidden */
-    display: none;
-
-    /** Position and style */
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-}
-
-.lightbox img .landscape {
-    /** Pad the lightbox image */
-    max-width: 90%;
-}
-
-.lightbox img .portrait {
-    max-width:90%;
-}
-
-.lightbox:target {
-    /** Remove default browser outline */
-    outline: none;
-
-    /** Unhide lightbox **/
-    display: block;
+.standalone img {
+    max-width: 49%;
 }
 
 /* Mobile Responsive */
