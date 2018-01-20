@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    height: 100%;
+    /* height: 100%; */
     overflow: auto;
     display: table;
 }
@@ -38,6 +38,14 @@ body {
     padding-right:1em;
 }
 
+.slideshow {
+    display:block;
+}
+
+.flickrlink {
+    display:none;
+}
+
 h1, h2 {
     font-weight: 400;
 }
@@ -68,7 +76,20 @@ table {
     color: white;
 }
 
+#home .wrapper {
+    height: 100vh;
+}
+
+#home .inner-wrapper {
+    height: 100vh;
+}
+
+#home .left {
+    height: 100vh;
+}
+
 #home .right {
+    height: 100vh;
     width: 3000px;
     text-align: center;
 }
@@ -113,10 +134,23 @@ table {
 
 @media only screen and (max-width: 760px) {
 
-    /* Home only */ 
+    /* Home only */
 
-    .inner-wrapper {
+    #home .wrapper {
+        height: auto;
+    }
+
+    #home .inner-wrapper {
+        height: auto;
         display:block;
+    }
+
+    #home .left {
+        height: auto;
+    }
+
+    #home .right {
+        height: auto;
     }
 
     #home {
@@ -160,18 +194,20 @@ table {
         clear:both;
     }
 
-    /* lightbox attempt */
 
-    .featherlight .featherlight-content {
-        /* dimensions: maximize lightbox with for small screens */
-        margin-left: 0;
-        margin-right: 0;
-        max-height: 98%;
+}
 
-        padding: 10px 10px 0;
-        border-bottom: 10px solid transparent;
+/* Higher breakpoint for photos page with wide slideshow */
+
+@media only screen and (max-width: 1100px) {
+
+    .slideshow {
+        display:none;
     }
 
+    .flickrlink {
+        display:block;
+    }
 
 }
 
